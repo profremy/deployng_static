@@ -1,0 +1,1 @@
+# deployng_static
