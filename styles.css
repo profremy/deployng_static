@@ -1,0 +1,178 @@
+/* Mobile-first Afrobeat-inspired color palette */
+:root {
+    --primary-gold: #DAA520;
+    --accent-green: #228B22;
+    --accent-red: #8B0000;
+    --earth-brown: #8B4513;
+    --text-dark: #333333;
+    --bg-light: #F5F5DC;
+    --bg-dark: #1C1C1C;
+    --text-light: #FFFFFF;
+}
+
+/* Light theme */
+body[data-bs-theme="light"] {
+    --bs-body-bg: var(--bg-light);
+    --bs-body-color: var(--text-dark);
+    --bs-primary: var(--primary-gold);
+    --bs-secondary: var(--earth-brown);
+    --bs-link-color: var(--accent-green);
+}
+
+/* Dark theme */
+body[data-bs-theme="dark"] {
+    --bs-body-bg: var(--bg-dark);
+    --bs-body-color: var(--text-light);
+    --bs-primary: var(--primary-gold);
+    --bs-secondary: var(--earth-brown);
+    --bs-link-color: var(--accent-red);
+}
+
+/* Mobile-first typography */
+body {
+    font-family: 'Arial Black', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: var(--bs-primary);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; }
+
+/* Hero section */
+.hero {
+    min-height: 60vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: var(--text-light);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navbar */
+.navbar {
+    transition: padding 0.3s ease;
+    background-color: rgba(255,255,255,0.95);
+    padding: 1rem;
+}
+
+body[data-bs-theme="dark"] .navbar {
+    background-color: rgba(0,0,0,0.95);
+}
+
+.navbar.shrink {
+    padding: 0.5rem !important;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.75rem;
+    font-size: 1rem;
+    touch-action: manipulation;
+}
+
+/* Accessibility: Focus and touch */
+a, button, input, select {
+    touch-action: manipulation;
+}
+
+a:focus, button:focus, input:focus, select:focus {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    min-width: 48px;
+    min-height: 48px;
+}
+
+/* Modal styling */
+.modal-content {
+    border: 1px solid var(--bs-secondary);
+}
+
+.modal-body {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Blog post styling */
+.blog-post {
+    background: var(--bs-body-bg);
+    padding: 1rem;
+    border: 1px solid var(--bs-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.blog-post pre {
+    white-space: pre-wrap;
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+}
+
+body[data-bs-theme="dark"] .blog-post pre {
+    background: #343a40;
+    color: #f8f9fa;
+}
+
+/* Song select dropdown */
+.form-select {
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-color: var(--bs-secondary);
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    max-width: 100%;
+}
+
+/* Media section */
+iframe {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Contact form */
+form .form-control {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+
+/* Mobile-specific adjustments */
+@media (min-width: 576px) {
+    body { font-size: 1.1rem; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.4rem; }
+    .hero { min-height: 80vh; }
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 3rem; }
+    .hero { min-height: 100vh; }
+}
+
+/* Optimize for touch */
+.navbar-toggler, .btn, a.nav-link, .form-select {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Fast loading: Avoid heavy animations */
+* {
+    transition-duration: 0.2s;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description"
+        content="Promoting Afrobeat protest music by Scribes, featuring 'Rewrite the Scroll' – revolutionary sounds for change.">
+    <title>Scribes – Rewrite the Scroll | Afrobeat Protest Music</title>
+
+    <!-- SEO and Open Graph -->
+    <meta property="og:title" content="Scribes – Rewrite the Scroll">
+    <meta property="og:description" content="Afrobeat protest song calling for rewriting history and justice.">
+    <meta property="og:image" content="https://example.com/rewrite-the-scroll-cover.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="music.song">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Structured Data for Music -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicRecording",
+      "name": "Rewrite the Scroll",
+      "byArtist": {
+        "@type": "MusicGroup",
+        "name": "Scribes"
+      },
+      "description": "Afrobeat protest music inspiring change and justice.",
+      "url": "https://example.com",
+      "image": "https://example.com/rewrite-the-scroll-cover.jpg",
+      "potentialAction": {
+        "@type": "ListenAction",
+        "target": [
+          "https://open.spotify.com/track/example",
+          "https://youtube.com/watch?v=example"
+        ]
+      }
+    }
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body data-bs-theme="light">
+
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">Scribes Afrobeat</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#lyrics">Lyrics</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#media">Media</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+                                data-bs-target="#disclaimerModal">Disclaimer</a></li>
+                    </ul>
+                    <button id="theme-toggle" class="btn btn-outline-secondary ms-3" aria-label="Toggle theme">Dark
+                        Mode</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero d-flex align-items-center justify-content-center text-center">
+            <div class="container">
+                <h1 class="display-1">Rewrite the Scroll</h1>
+                <p class="lead">"Revolution through rhythm – Afrobeat for the people."</p>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#playModal">Play
+                    Now</button>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <article>
+                    <h2>About the Song</h2>
+                    <p>As an independent artist, Scribes presents "Rewrite the Scroll" as a protest anthem rooted in
+                        Afrobeat traditions. This track calls for rewriting oppressive histories and fighting for
+                        justice. View our <a href="#" data-bs-toggle="modal"
+                            data-bs-target="#disclaimerModal">disclaimer</a> for more context.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="lyrics" class="py-5 bg-light">
+            <div class="container">
+                <h2>Lyrics Blog</h2>
+                <div class="mb-3">
+                    <label for="song-select" class="form-label">Select a Song</label>
+                    <select id="song-select" class="form-select" aria-label="Select a song to view lyrics">
+                        <option value="">Choose a song...</option>
+                    </select>
+                </div>
+                <div id="blog-posts" class="row">
+                    <!-- Selected song content loaded via JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="media" class="py-5">
+            <div class="container">
+                <h2>Media</h2>
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/example"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="col-12">
+                        <iframe src="https://open.spotify.com/embed/track/example" width="100%" height="380"
+                            frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <h2>Contact & Follow</h2>
+                <p>Email: scribes@afrobeat.com</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/scribes" aria-label="Twitter">Twitter</a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://instagram.com/scribes"
+                            aria-label="Instagram">Instagram</a></li>
+                </ul>
+                <div>
+                    <label for="email" class="form-label">Newsletter Signup</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your email" required>
+                    <button type="button" class="btn btn-primary mt-2">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 text-center">
+        <p>&copy; 2025 Scribes. All rights reserved.</p>
+    </footer>
+
+    <!-- Play Modal -->
+    <div class="modal fade" id="playModal" tabindex="-1" aria-labelledby="playModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="playModalLabel">Play Rewrite the Scroll</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <audio controls>
+                        <source src="audio/rewrite-the-scroll.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Song description: Afrobeat protest track.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disclaimer Modal -->
+    <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="disclaimerModalLabel">Disclaimer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>"Rewrite the Scroll" is a work of political art intended to provoke thought, inspire dialogue,
+                        and promote justice through Afrobeat music. It is not intended to incite violence or harm. The
+                        views expressed in the song reflect the artist's perspective and are meant to encourage peaceful
+                        activism and change.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
